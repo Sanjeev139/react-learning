@@ -36,3 +36,21 @@ Ans: Parcel used for create dev build, create server and automatically refresh y
 
 - To create production build, run command `npx parcel build index.html`
 
+Q: What is JSX?
+Ans: JSX is a convention, where we can merge our html and javascript together.
+    - JSX code converted into react.CreateElement code.
+
+Q: What is Babel.
+Ans : Bable is JS compiler. It comiles the JS code which browser understands.
+      Bable basically converts your jsx code into React.CreateEelement.
+      If you need to give properties like class or tabindex, inside jsx, you need to give it in camel-case like className, tabIndex.
+
+Q: What type of component in React?
+Ans: Class based component - Old way to write the component - It uses JS classes to create component
+     Functional based component : New way to write the component - It uses JS function to create component
+
+Q: What's the functional component ?
+Ans: Functional component is a normal JS functions, which returns the JSX code or react element.
+
+Q: What is component composition ?
+Ans: When more than one component combined into each other, called component composition.
