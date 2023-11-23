@@ -54,3 +54,8 @@ Ans: Functional component is a normal JS functions, which returns the JSX code o
 
 Q: What is component composition ?
 Ans: When more than one component combined into each other, called component composition.
+
+Q: What is props?
+Ans: When you have to pass the dynamic data to the components, we need to pass as props.
+
+Q: Config driven UI - Based on configuration, UI will display the data.

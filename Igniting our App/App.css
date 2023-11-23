@@ -1,3 +1,42 @@
-#heading {
-    color: red;
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.logo {
+    width: 100px;
+}
+
+.nav-items > ul {
+    display: flex;
+    list-style: none;
+    padding: 0 10px
+}
+
+.nav-items > ul > li {
+    padding: 10px;
+    margin: 10px;  
+}
+
+.res-card {
+    width: 200px;
+    height: auto;
+    padding: 5px;
+}
+
+.res-card :hover {
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 20%;
+}
+
+.res-container {
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.res-logo {
+    width: 100%;
+    height: 200px;
 }
