@@ -59,3 +59,31 @@ Q: What is props?
 Ans: When you have to pass the dynamic data to the components, we need to pass as props.
 
 Q: Config driven UI - Based on configuration, UI will display the data.
+
+Q: What type of import export we have.
+Ans: Two type of import and export
+    - Named import
+        ex : import { name } from "path"
+    - default import
+        ex: import name from "path"
+    - Name export
+        ex : export const key1
+            export const key2
+    - default export
+        ex: default export key
+
+Q: What is React hooks?
+Ans: React hook is normal JS function.
+    - useState() --> Used to generate state variable in React
+    - useEffect()
+    - Whenever a state variable is changes, React re-render the component.
+
+Q: Reconcilation Alogorithm (React Fiber)
+Ans: REact creates virtual DOM, when any chnages happen in UI
+        virtual DOM : is representation of actual DOM.
+
+Q: What is Diff Algorithm?
+Ans: It basically tries to find the difference between old virtual DOM and new virtual DOM.
+
+Q: Why React is fast?
+Ans: React is doing efficient dom manupulation because it has virtual DOM.
