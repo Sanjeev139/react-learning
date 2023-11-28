@@ -75,7 +75,7 @@ Ans: Two type of import and export
 Q: What is React hooks?
 Ans: React hook is normal JS function.
     - useState() --> Used to generate state variable in React
-    - useEffect()
+    - useEffect() --> syntax --> useEffect(() =>, []), first argument called callback function and another one is dependency array.
     - Whenever a state variable is changes, React re-render the component.
 
 Q: Reconcilation Alogorithm (React Fiber)
@@ -87,3 +87,12 @@ Ans: It basically tries to find the difference between old virtual DOM and new v
 
 Q: Why React is fast?
 Ans: React is doing efficient dom manupulation because it has virtual DOM.
+
+Q: How many ways to fetch the data.
+Ans : There are two ways
+        - As soon as our page load, we will get the data from an API, and then we render in UI
+        - First we load the UI, render the data and as soon as we get the data from API, we re-render the data again.
+
+
+# Whenever you change the local state variable, React re-render the whole componenet.
+# Whenever state variable updates, react triggers a reconcilation cycle (re-render the component)
