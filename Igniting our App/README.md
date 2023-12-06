@@ -78,6 +78,10 @@ Ans: React hook is normal JS function.
     - useEffect() --> syntax --> useEffect(() =>, []), first argument called callback function and another one is dependency array.
     - Whenever a state variable is changes, React re-render the component.
 
+# useEffect => When the dependency array is not presemt, then it'll call whenever our component re-render
+# When there is an empty dependency error is present, it'll call once when first time re-render will happen.
+# If dependency array is present (not empty), then useEffect call when that dependency will change.
+
 Q: Reconcilation Alogorithm (React Fiber)
 Ans: REact creates virtual DOM, when any chnages happen in UI
         virtual DOM : is representation of actual DOM.
@@ -96,3 +100,13 @@ Ans : There are two ways
 
 # Whenever you change the local state variable, React re-render the whole componenet.
 # Whenever state variable updates, react triggers a reconcilation cycle (re-render the component)
+
+Q: Whats is the use of Outlet?
+Ans: Outlete, replace by the child component based on the path provided to it.
+
+Q: Difference between anchor and Link in React?
+Ans: 
+
+Q: Two types of routing in web application
+Ans: 1. Server side routing
+     2. Client side routing
