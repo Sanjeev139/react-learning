@@ -52,6 +52,12 @@ Ans: Class based component - Old way to write the component - It uses JS classes
 Q: What's the functional component ?
 Ans: Functional component is a normal JS functions, which returns the JSX code or react element.
 
+Q: What's the class component ?
+Ans: 
+
+Q: Why do we need super props?
+Ans: 
+
 Q: What is component composition ?
 Ans: When more than one component combined into each other, called component composition.
 
@@ -110,3 +116,8 @@ Ans:
 Q: Two types of routing in web application
 Ans: 1. Server side routing
      2. Client side routing
+
+# React has two phase
+    - Render Phase
+    - Commit phase
+    ![Alt text](image.png)
