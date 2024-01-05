@@ -3,12 +3,14 @@ import { useState, useEffect } from "react"
 import Shimmer from "./Shimmer"
 import { RESTAURANT_API } from "../utils/constant"
 import { Link } from "react-router-dom"
+import useOnlineStatus from "../utils/useOnlineStatus"
 
 
 const Body = () => {
     const[listofRestaurent, setListOfRestaurent] = useState([]);
     const[filteredRes, setFilteredRes] = useState([]);
     const[searchText, setSearchText] = useState("");
+    const onlineStatus = useOnlineStatus();
 
     useEffect(() => {
         fetchAPi()
@@ -20,6 +22,8 @@ const Body = () => {
         setListOfRestaurent(result?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
         setFilteredRes(result?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
     }
+
+    if (onlineStatus === false) return (<h1>Opps ! Seems, you're offline. Please check your internet connection</h1>); 
 
     return listofRestaurent.length === 0 ? <Shimmer></Shimmer> : (
         <div className="body">
