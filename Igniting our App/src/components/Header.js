@@ -5,16 +5,16 @@ import { Link } from "react-router-dom";
 export const Header = () => {
   const [btnName, setBtnName] = useState("Login");
   return (
-    <div className="header">
-      <div className="logo-container">
-        <img className="logo" src={LOGO_URL} />
+    <div className="flex justify-between bg-cyan-200">
+      <div className="w-20 h-20">
+        <img className="w-25 h-25" src={LOGO_URL} />
       </div>
-      <div className="nav-items">
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About Us</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-          <li>Cart</li>
+      <div className="align-middle items-center">
+        <ul className="flex ml-2 pr-4">
+          <li className="p-5"><Link to="/">Home</Link></li>
+          <li className="p-5"><Link to="/about">About Us</Link></li>
+          <li className="p-5"><Link to="/contact">Contact</Link></li>
+          <li className="p-5">Cart</li>
           <button
             className="login"
             onClick={() => {

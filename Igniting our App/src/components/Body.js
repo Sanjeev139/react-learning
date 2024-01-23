@@ -19,34 +19,34 @@ const Body = () => {
     const fetchAPi = async () => {
         const data = await fetch(RESTAURANT_API);
         const result = await data.json();
-        setListOfRestaurent(result?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-        setFilteredRes(result?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+        setListOfRestaurent(result?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+        setFilteredRes(result?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
     }
 
     if (onlineStatus === false) return (<h1>Opps ! Seems, you're offline. Please check your internet connection</h1>); 
 
     return listofRestaurent.length === 0 ? <Shimmer></Shimmer> : (
         <div className="body">
-            <div className="filter">
-                <div className="seach">
-                    <input type="text" className="search-box" value={searchText} onChange={
+            <div className="flex">
+                <div>
+                    <input type="text" className="m-10 h-10 w-100 border-r-4 border-l-4 border-b-4 border-t-4" value={searchText} onChange={
                         (e) => {
                             setSearchText(e.target.value)
                         }
                     }></input>
-                    <button className="search-btn" onClick={
+                    <button className="p-2 h-50 w-200 bg-green-300" onClick={
                         () => {
                             const filteredRes = listofRestaurent.filter((res) => res.info.name.toLowerCase().includes(searchText.toLowerCase()));
                             setFilteredRes(filteredRes)
                         }
                     }>Search</button>
                 </div>
-                <button className="filter-btn" onClick={() => {
+                <button className="m-5 my-10 h-10 w-200 bg-green-300 p-2 border-r-4 justify-center items-center" onClick={() => {
                     const filteredList = listofRestaurent.filter((res) => res.info.avgRating > 4);
                     setFilteredRes(filteredList)
                 }}>Top Rated Restaurents</button>
             </div>
-            <div className="res-container">
+            <div className="res-container flex flex-wrap">
                 {
                     filteredRes.map((resttaurentData) => (<Link to={"/restaurent/"+resttaurentData.info.id} key = {resttaurentData.info.id}><RestaurantCard restData={resttaurentData}></RestaurantCard> </Link>))
                 }
