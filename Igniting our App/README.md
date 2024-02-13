@@ -121,3 +121,33 @@ Ans: 1. Server side routing
     - Render Phase
     - Commit phase
     ![Alt text](image.png)
+
+Q: What is hiher order component ?
+Ans: Higher component is a component, which takes one component and return a component.
+
+Q: What is control and uncontrol component?
+
+Q: What is lifting state up in the react.
+
+Q: What is props drilling?
+
+Q: What is react context
+Ans : To avoid the props drilling, we can use react context.
+
+Q: useContext
+
+Q: What is Redux and what is advantage of Redux?
+Ans: 
+
+Q: What is Redux store?
+Ans: Redux store is a very big JS object with lots of data inside it. which kept in a gloabl central space.
+
+Q: What is reducer ?
+Ans: When you press the add button, it dispatches an action which call the reducer function, which updates the slice of the redux store.
+
+#  ![ScreenShot](image-1.png)
+
+Q: Redux 
+    - ConfigureStore - to create the store, it comes from (reduxjs)
+    - Provide : to provide the store to our react app, it comes from (react/redux)
+    - createSlice: used to create the slice
