@@ -151,3 +151,17 @@ Q: Redux
     - ConfigureStore - to create the store, it comes from (reduxjs)
     - Provide : to provide the store to our react app, it comes from (react/redux)
     - createSlice: used to create the slice
+    - useSelector : to fetch the data
+    - useDispatch : to dispacth the event
+
+# Setting up testing framework in our react application
+    - Install React Testing Library
+    - Install Jest
+    - Install Babel dependencies
+    - Configure Babel
+    - Configure parcel confif file to diable default Babel configuration (As Babel inside using parcel)
+    - Jest Configuration (npx jest --init)
+    - install JSDOM library
+    - Install @babel/preset-react - to make JSX work in test cases
+    - Include @babel/preset-react inside babel config
+    - npm i -D @testing-library/jest-dom
